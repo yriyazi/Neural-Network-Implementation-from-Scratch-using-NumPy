@@ -30,7 +30,8 @@ The "utils" folder within this repository contains utility functions that are he
     This function calculates a confusion matrix to evaluate the performance of a classification model. It counts the occurrences of true positive, true negative, false positive, and false negative predictions for each class. The result is a matrix that provides insights into the model's classification accuracy and misclassifications across different classes. This implementation is independent of the scikit-learn library, providing an alternative way to compute confusion matrices.
 
 
-  ### `compute_confusion_matrix(true, pred)`
+  ### `convertToOneHot(vector,num_classes=None)`
+    returns a one hotted vector accoding to num_classes
 
 ## Contributing
 
