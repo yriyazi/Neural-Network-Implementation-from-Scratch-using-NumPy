@@ -1,6 +1,5 @@
 import numpy as np
 
-# https://stackoverflow.com/questions/29831489/convert-array-of-indices-to-one-hot-encoded-array-in-numpy
 def convertToOneHot(vector, num_classes=None):
     """
     Converts an input 1-D vector of integers into an output
@@ -8,6 +7,8 @@ def convertToOneHot(vector, num_classes=None):
     of j will set a '1' in the i'th row, j'th column of the
     output array.
 
+    with help from: https://stackoverflow.com/questions/29831489/convert-array-of-indices-to-one-hot-encoded-array-in-numpy
+    
     Example:
         v = np.array((1, 0, 4))
         one_hot_v = convertToOneHot(v)
