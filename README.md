@@ -77,17 +77,20 @@ activation_function = {1:'ReLU',
 
 ```yaml
 model:
-  [ [neuron_input, mu, sigma, bias, regularization_L2, activation_function, dropout],
-    [neuron_input, mu, sigma, bias, regularization_L2, activation_function, dropout],
-  ]
+      [
+        [neuron_input, mu, sigma, bias, regularization_L2, activation_function, dropout],
+        [neuron_input, mu, sigma, bias, regularization_L2, activation_function, dropout],
+      ]
 ```
 
 For example:
 
 ```yaml
 model:
-  - [[16, 0, 1, 0, 0, 4, 0.0],
-  - [10, 0, 1, 0, 0, 5, 0],]
+      [
+      [16, 0, 1, 0, 0, 4, 0.0],
+      [10, 0, 1, 0, 0, 5, 0.0],
+      ]
 ```
 3. running train.py
 
