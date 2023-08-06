@@ -1,6 +1,6 @@
 # Neural Network Implementation from Scratch using NumPy
 
-This repository contains an implementation of a neural network from scratch using only NumPy, a fundamental library for numerical computing in Python. The neural network is designed to perform tasks such as classification and regression.
+This repository contains an implementation of a neural network from scratch using only NumPy, a fundamental library for numerical computing in Python. The neural network is designed to perform tasks such as classification, regression, or any other supervised learning problem.
 
 ## Table of Contents
 
@@ -21,7 +21,7 @@ Neural networks have shown remarkable capabilities in various machine learning t
 ## Features
 
 - Implementation of a feedforward neural network with customizable architecture.
-- Support for various activation functions (e.g., ReLU, sigmoid, tanh). (it must be defiend in config file)
+- Support for various activation functions (e.g., ReLU, sigmoid, tanh).
 - Vectorized operations for efficient computation.
 - Forward and backward propagation for training.
 - Mini-batch gradient descent for optimization.
@@ -61,41 +61,28 @@ To run the code, you'll need:
 
 You can create, train, and test your neural network by utilizing the provided modules and classes. Modify the architecture, hyperparameters, and dataset according to your task.
 
-1. Import the necessary classes and functions:
+1. set up the dataset (dataset was binary Cifar-10)
 
-   ```python
-   from neural_network import NeuralNetwork
-   from layers import DenseLayer
-   from activations import ReLU, Sigmoid
-   from loss_functions import MeanSquaredError
-   from optimizers import MiniBatchGradientDescent
-   ```
+2. Modifying Network Structure
+    To modify the neural network's structure, you can use the `config.yaml` file. Inside the `model` section of the config file, create a list where each element specifies the layer's configuration. Each element should contain the following information:
 
-2. Create a neural network instance:
+```yaml
+model:
+  [ [neuron_input, mu, sigma, bias, regularization_L2, activation_function, dropout],
+    [neuron_input, mu, sigma, bias, regularization_L2, activation_function, dropout],
+  ]
+```
 
-   ```python
-   model = NeuralNetwork(loss_function=MeanSquaredError(), optimizer=MiniBatchGradientDescent(learning_rate=0.01))
-   ```
+For example:
 
-3. Build the architecture by adding layers:
+```yaml
+model:
+  - [[16, 0, 1, 0, 0, 4, 0.0],
+  - [10, 0, 1, 0, 0, 5, 0],]
+```
+3. running train.py
 
-   ```python
-   model.add_layer(DenseLayer(input_size, num_neurons, activation=ReLU()))
-   model.add_layer(DenseLayer(num_neurons, output_size, activation=Sigmoid()))
-   ```
 
-4. Train the model using your dataset:
-
-   ```python
-   model.train(X_train, y_train, epochs=100, batch_size=64)
-   ```
-
-5. Evaluate the model:
-
-   ```python
-   accuracy = model.evaluate(X_test, y_test)
-   print(f"Test Accuracy: {accuracy * 100:.2f}%")
-   ```
 
 ## Examples
 
@@ -126,3 +113,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 *Disclaimer: This project is for educational purposes and may not cover all optimization techniques and considerations for production-level neural networks.*
 ```
+
+
