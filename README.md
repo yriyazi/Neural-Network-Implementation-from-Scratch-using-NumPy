@@ -65,7 +65,8 @@ You can create, train, and test your neural network by utilizing the provided mo
 
 2. Modifying Network Structure
     To modify the neural network's structure, you can use the `config.yaml` file. Inside the `model` section of the config file, create a list where each element specifies the layer's configuration. Each element should contain the following information:
-```python
+   
+```Python
 activation_function = {1:'ReLU',
                        2:'LeakyReLu',
                        3:'tangenthyperbolic',
