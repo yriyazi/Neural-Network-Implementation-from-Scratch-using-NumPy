@@ -1,6 +1,6 @@
 # Neural Network Implementation from Scratch using NumPy
 
-This repository contains an implementation of a neural network from scratch using only NumPy, a fundamental library for numerical computing in Python. The neural network is designed to perform tasks such as classification, regression, or any other supervised learning problem.
+This repository contains an implementation of a neural network from scratch using only NumPy, a fundamental library for numerical computing in Python. The neural network is designed to perform tasks such as classification and regression.
 
 ## Table of Contents
 
@@ -21,7 +21,7 @@ Neural networks have shown remarkable capabilities in various machine learning t
 ## Features
 
 - Implementation of a feedforward neural network with customizable architecture.
-- Support for various activation functions (e.g., ReLU, sigmoid, tanh).
+- Support for various activation functions (e.g., ReLU, sigmoid, tanh). (it must be defiend in config file)
 - Vectorized operations for efficient computation.
 - Forward and backward propagation for training.
 - Mini-batch gradient descent for optimization.
@@ -40,8 +40,8 @@ To run the code, you'll need:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/your-neural-network.git
-   cd your-neural-network
+   git clone https://github.com/your-username/Neural-Network-Implementation-from-Scratch-using-NumPy.git
+   cd Neural-Network-Implementation-from-Scratch-using-NumPy
    ```
 
 2. Create a virtual environment (optional but recommended):
@@ -101,6 +101,19 @@ You can create, train, and test your neural network by utilizing the provided mo
 
 Check out the [`examples`](examples/) directory for detailed usage examples and demonstrations.
 
+## Additional Files and Folders
+
+- [`config.yaml`](config.yaml): Configuration file for hyperparameters and settings.
+- [`datasets`](datasets/): Directory to store datasets used for training and testing.
+- [`losses`](losses/): Implementation of different loss functions.
+- [`nets`](nets/): Definition of various neural network architectures.
+- [`test.py`](test.py): Script to test the trained neural network.
+- [`train.py`](train.py): Script to train the neural network.
+- [`utils`](utils/): Utility functions used in the project.
+- [`dataloaders`](dataloaders/): Data loading utilities.
+- [`deeplearning`](deeplearning/): Deep learning related utilities.
+- [`Model`](Model/): Saved model checkpoints and parameters.
+
 ## Contributing
 
 Contributions are welcome! If you find any issues or have improvements to suggest, feel free to open a pull request.
@@ -112,3 +125,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 *Disclaimer: This project is for educational purposes and may not cover all optimization techniques and considerations for production-level neural networks.*
+```
