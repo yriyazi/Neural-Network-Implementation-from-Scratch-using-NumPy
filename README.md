@@ -40,7 +40,8 @@ To run the code, you'll need:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/Neural-Network-Implementation-from-Scratch-using-NumPy.git
+   
+   git clone https://github.com/yriyazi/Neural-Network-Implementation-from-Scratch-using-NumPy.git
    cd Neural-Network-Implementation-from-Scratch-using-NumPy
    ```
 
@@ -94,11 +95,6 @@ model:
 ```
 3. running train.py
 
-
-
-## Examples
-
-Check out the [`examples`](examples/) directory for detailed usage examples and demonstrations.
 
 ## Additional Files and Folders
 
