@@ -123,6 +123,17 @@ model:
 - [`deeplearning`](deeplearning/): Deep learning related utilities.
 - [`Model`](Model/): Saved model checkpoints and parameters.
 
+
+
+
+![Image Description](Images\accuracy-512-0.01-150-Xavier=True.png)
+![Image Description](Images\loss-512-0.01-150-Xavier=True.png)
+![Image Description](Images\accuracy-512-0.01-150-Xavier=True.png)
+
+*Caption: Some Output*
+
+
+
 ## Contributing
 
 Contributions are welcome! If you find any issues or have improvements to suggest, feel free to open a pull request.
