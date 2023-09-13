@@ -1,7 +1,7 @@
 # Neural Network Implementation from Scratch using NumPy
 
-![Image Description](https://cdn-images-1.medium.com/v2/resize:fit:1000/format:png/1*WJ57ZKta2HxlQhzxuWR5zw.png)
-*Caption: https://pub.towardsai.net/implement-a-neural-network-from-scratch-with-numpy-67db290771b*
+![Image Description](https://commons.wikimedia.org/wiki/File:Multi-Layer_Neural_Network-Vector-Blank.svg)
+*Caption: https://commons.wikimedia.org/wiki/File:Multi-Layer_Neural_Network-Vector-Blank.svg*
 
 This repository contains an implementation of a neural network from scratch using only NumPy, a fundamental library for numerical computing in Python. The neural network is designed to perform tasks such as classification, regression, or any other supervised learning problem.
 
