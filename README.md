@@ -126,9 +126,9 @@ model:
 
 
 
-![Image Description](Images\accuracy-512-0.01-150-Xavier=True.png)
-![Image Description](Images\loss-512-0.01-150-Xavier=True.png)
-![Image Description](Images\accuracy-512-0.01-150-Xavier=True.png)
+![Image Description](Images/accuracy-512-0.01-150-Xavier=True.png)
+![Image Description](Images/loss-512-0.01-150-Xavier=True.png)
+![Image Description](Images/accuracy-512-0.01-150-Xavier=True.png)
 
 *Caption: Some Output*
 
